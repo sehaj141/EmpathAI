@@ -78,6 +78,16 @@ Local Conversational Logic / Ollama (Development)
 
 ---
 
+##Screenshots
+
+![EmpathAI Chat Demo](https://github.com/user-attachments/assets/8cc01cf2-2152-483b-9637-e2aad10c1833)
+![EmpathAI Chat Demo](https://github.com/user-attachments/assets/108eaa82-9461-4d38-bb09-d77dd96b02ed)
+![EmpathAI Chat Demo](https://github.com/user-attachments/assets/a74118d1-d093-49b1-b69a-19a13f3b21fc)
+![EmpathAI Chat Demo](https://github.com/user-attachments/assets/71884e78-e885-4a7b-8c71-e3ab5e161665)
+![EmpathAI Chat Demo](https://github.com/user-attachments/assets/4765b026-a462-4ce7-9615-e30150acb03a)
+
+---
+
 ##  Local Setup Instructions
 
  1️⃣ Clone Repository
@@ -99,17 +109,6 @@ If using local LLM:
 ollama run llama3
 
 Ensure Ollama is running before starting backend.
-
----
-
-##  Screenshots
-![EmpathAI Chat Demo](https://github.com/user-attachments/assets/8cc01cf2-2152-483b-9637-e2aad10c1833)
-![EmpathAI Chat Demo](https://github.com/user-attachments/assets/108eaa82-9461-4d38-bb09-d77dd96b02ed)
-![EmpathAI Chat Demo](https://github.com/user-attachments/assets/a74118d1-d093-49b1-b69a-19a13f3b21fc)
-![EmpathAI Chat Demo](https://github.com/user-attachments/assets/71884e78-e885-4a7b-8c71-e3ab5e161665)
-![EmpathAI Chat Demo](https://github.com/user-attachments/assets/4765b026-a462-4ce7-9615-e30150acb03a)
-
-
 
 ---
 
