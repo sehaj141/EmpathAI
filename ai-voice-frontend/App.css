@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background: black;
+    font-family: Orbitron, sans-serif;
+    color: #00f7ff;
+  }
+  
+  .container {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .neon-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #00111a, #000);
+    animation: pulse 6s infinite alternate;
+    z-index: -1;
+  }
+  
+  @keyframes pulse {
+    from { opacity: 0.7; }
+    to { opacity: 1; }
+  }
+  
+  .title {
+    text-align: center;
+    text-shadow: 0 0 20px #00f7ff;
+  }
+  
+  .chat-box {
+    height: 350px;
+    overflow-y: auto;
+    border: 1px solid #00f7ff;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .user-msg {
+    text-align: right;
+    margin: 8px;
+    background: #111;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  .ai-msg {
+    text-align: left;
+    margin: 8px;
+    background: #001f2f;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  .call-ui {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .avatar {
+    font-size: 80px;
+    transition: 0.3s;
+  }
+  
+  .avatar.speaking {
+    transform: scale(1.2);
+    text-shadow: 0 0 20px #00f7ff;
+  }
+  
+  .waveform {
+    height: 40px;
+    margin: 20px auto;
+    width: 200px;
+    background: linear-gradient(
+      90deg,
+      #00f7ff,
+      transparent,
+      #00f7ff
+    );
+    animation: wave 1s infinite linear;
+  }
+  
+  @keyframes wave {
+    from { background-position: 0px; }
+    to { background-position: 200px; }
+  }
+  
+  .timer {
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  .end-btn {
+    background: red;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+  }
+  

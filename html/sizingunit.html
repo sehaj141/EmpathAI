@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>sizing units</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border:2px solid black;
+            /*width: 2048px;*/
+            width:80vw;
+            height:10vh;
+            margin: 23px auto;
+            
+            background-color: aquamarine;
+        }
+        .container{ 
+            box-sizing: border-box;
+            border:2px solid black;
+            /*width: 2048px;*/
+            width:80vw;
+            height:80vh;
+            min-height: 80vh;
+
+            margin:auto;
+            font-size: 16px;
+            background-color: aquamarine;
+
+        }
+        .container > div{
+            font-size: 2rem;
+            /* width:50%; */
+        }
+        .container > div > div{
+            border:2px solid blue;
+            width:50%;
+        }
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;  
+            margin:23px auto;
+          color: black;
+          font-size: 22px;
+          /* width:100vmin; */
+          width:80vw;
+        }
+    </style>
+
+</body>
+<div class="box">
+    This is a box
+</div>
+<div class="container">
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus, magnam nostrum nisi consequuntur voluptatum rem necessitatibus. Beatae aspernatur ipsum amet provident veritatis architecto cumque aperiam.
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, perspiciatis, suscipit ratione consequuntur, unde velit iure corrupti animi sint voluptatum accusamus consectetur officia?
+        </div>
+    </div>
+</div>
+<div class="mycont">
+    this is another container
+</div>
+</html>

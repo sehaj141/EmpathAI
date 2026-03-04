@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="harry" data-conceptby="rohan" >Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <script>
+             let div = document.createElement("div");
+             div.innerHTML = "I have been inserted <b>by harry</b>"
+             div.setAttribute("class", "created");
+             document.querySelector(".container").before(div);
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("afterbegin", " <b>I am under the water. Please help me here too much raining.... iuuuuooooo</b>")
+        </script>
+    </div>
+</body>
+
+</html>
+
+<!-- document.querySelector(".box") -->
+<!-- <div class=​"box" style=​"display:​ flex;​" data-createdby=​"harry" data-conceptby=​"rohan">​Hey I am a box​</div>​flex -->
+<!-- document.querySelector(" .box").innerHTML -->
+<!-- 'Hey I am a box' -->
+<!-- document.querySelector(".container").innerHTML -->
+<!-- j ' <b>I am under the water. Please help me here too much raining.... iuuuuooooo</b>\n        <div class="box" style="display: flex;" data-createdby="harry" data-conceptby="rohan">Hey I am a box</div>\n        <div class="box">Hey I am a box</div>\n          --> 
+<!-- document.querySelector(".container").innerText -->
+<!-- 'I am under the water. Please help me here too much raining.... iuuuuooooo\nHey I am a box\nHey I am a box' -->
+<!-- document.querySelector(".container").outerHTML -->
+<!--  '<div class="container red bg-green"> <b>I am under the water. Please help me here too much raining.... iuuuuooooo</b>\n        <div class="box" style="display: flex;" data-createdby="harry" data-conceptby="rohan">Hey I am a box</div>\n        <div class="box">Hey I am a box</div>\n        --> 
+<!-- document.querySelector(".container").tagName -->
+<!-- 'DIV' -->
+<!-- document.querySelector(".container").nodeName -->
+<!-- 'DIV' -->
+<!-- document.querySelector(".container").textContent -->
+<!-- ' I am under the water. Please help me here too much raining.... iuuuuooooo\n        Hey I am a box\n        Hey I am a box\n        \n             -->
+
+<!-- document.querySelector(".box").innerHTML = "Hey I am a box" -->
+<!-- 'Hey I am a box' -->
+<!-- document.querySelector(".box").innerHTML = "Hey I am a Harry" -->
+
+<!-- 'Hey I am a Harry' -->
+<!-- document.querySelector(".box").hidden = true -->
+<!-- true -->
+<!-- document.querySelector(".box").hasAttribute("style") -->
+<!-- true -->
+<!-- document.querySelector(".box").getAttribute("style") -->
+<!-- 'display: flex;' -->
+<!-- document.querySelector(".box").setAttribute("style" , "display:inline") -->
+<!-- undefined -->
+<!-- document.querySelector(".box").attribute -->
+<!-- undefined -->
+<!-- document.querySelector(".box").attributes -->
+<!--  NamedNodeMap {0: class, 1: style, 2: data-createdby, 3: data-conceptby, 4: hidden, class: class, style: style, data-createdby: data-createdby, data-conceptby: data-conceptby, hidden: hidden, …}0: class1: style2: data-createdby3: data-conceptby4: hiddenclass: classdata-conceptby: data-conceptbydata-createdby: data-createdbyhidden: hiddenstyle: stylelength: 5[[Prototype]]: NamedNodeMap --> 
+<!-- document.querySelector(".box").dataset -->
+<!-- DOMStringMap {createdby: 'harry', conceptby: 'rohan'}conceptby: "rohan"createdby: "harry"[[Prototype]]: DOMStringMap -->
+<!-- document.querySelector(".box").remove() -->
+<!-- undefined -->
+<!-- document.querySelector(".container").classList -->
+<!--  DOMTokenList(3) ['container', 'red', 'bg-green', value: 'container red bg-green']0: "container"1: "red"2: "bg-green"length: 3value: "container red bg-green"[[Prototype]]: DOMTokenList -->
+  <!-- document.querySelector(".container").className -->
+<!-- 'container red bg-green' -->
+<!-- document.querySelector(".container").classList.add("harry") -->
+<!-- undefined -->
+<!-- document.querySelector(".container").classList.remove("harry") -->
+<!-- undefined -->
+<!-- document.querySelector(".container").classList.toggle("red") -->
+<!-- false -->
+<!-- document.querySelector(".container").classList.toggle("red" -->
+<!-- VM2547:1 Uncaught SyntaxError: missing ) after argument list -->
+<!-- document.querySelector(".container").classList.toggle("red") -->
+<!-- true -->

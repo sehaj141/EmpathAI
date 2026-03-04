@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /*element selector*/
+        div{
+            background-color: yellowgreen;
+        }
+        /*class selector*/
+        .red{
+            background-color: rgb(219, 28, 28);
+        }
+        /*id selector*/
+        #green{
+            background-color: rgb(224, 31, 224);
+        }
+        /* child selector*/
+        div>p{
+            color: black;
+            background-color: rgb(16, 243, 167);
+        }
+        /*descendant selector*/
+        div p{
+            color: rgb(214, 44, 44);
+            background-color: rgb(240, 236, 23);
+        }
+        /*universal selector*/
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color:rgb(0, 255, 170);}
+            a:link{
+                color:blue;
+            }
+            a:active{
+                background-color: pink;
+            }
+            a:hover{
+                background-color: yellow;
+            }
+            p:first-child{
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am div
+        <p>I'm para inside div</p>
+        <p>para inside div(second child)</p>
+        <article>
+            <p>I'm para inside article which is inside div</p>
+            <p>I'm para inside article which is inside div(second child)</p>
+        </article>
+    </div>
+    <div>
+        another div
+    </div>
+    <div id="green">
+        one more divvv
+    </div>
+    <a href="http://www.google.com">go to GOOGLE</a>
+    <a href="https://www.facebook.com">go to facebook</a>
+    <main class="one">
+        <p>me FIRST</p>
+        <p>me SECOND</p>
+    </main>
+    
+</body>
+</html>
